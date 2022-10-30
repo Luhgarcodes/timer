@@ -1,5 +1,3 @@
-
-
 const totaltag = document.getElementById("totaltag");
 
 const lostdays= document.getElementById("lostdays");
