@@ -11,7 +11,7 @@ const pendingmin= document.getElementById("pendingmin");
 const pendingsec= document.getElementById("pendingsec");
 
 const timer = setInterval(counter,1000);
-counter();
+// counter();
 function counter(){
     const lastDate  = new Date("September 23,2028 00:00:00");
     const startDate = new Date("October 30,2022 15:00:00");
