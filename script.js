@@ -1,6 +1,4 @@
-const lastDate  = new Date("September 23,2028 00:00:00");
-const startDate = new Date("October 30,2022 15:00:00");
-const currentDate = new Date();
+
 
 const totaltag = document.getElementById("totaltag");
 
@@ -17,6 +15,9 @@ const pendingsec= document.getElementById("pendingsec");
 const timer = setInterval(counter,1000);
 counter();
 function counter(){
+    const lastDate  = new Date("September 23,2028 00:00:00");
+    const startDate = new Date("October 30,2022 15:00:00");
+    const currentDate = new Date();
     total();
     lost();
     pending();    
