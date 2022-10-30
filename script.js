@@ -22,7 +22,7 @@ function counter(){
     function total(){
         
         totalDays = (lastDate - startDate)/(1000*60*60*24);
-        totaltag.textContent = ` ${lastDate.getDate()}:${lastDate.getMonth()+1}:${lastDate.getFullYear()}`;        
+        totaltag.textContent = ` Before ${lastDate.getFullYear()} - 30`;        
         // console.log(`10 crs-Plan @: ${totalDays.toFixed(0)}`);
     }
     function lost(){
