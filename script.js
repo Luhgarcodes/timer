@@ -18,7 +18,8 @@ function counter(){
     const currentDate = new Date();
     total();
     lost();
-    pending();    
+    pending();   
+    current();
     function total(){
         
         totalDays = (lastDate - startDate)/(1000*60*60*24);
@@ -58,6 +59,23 @@ function counter(){
         // console.log(`Pending hours: ${hr_pending}`);
         // console.log(`Pending mins: ${min_pending}`);
         // console.log(`Pending secs: ${sec_pending}`);
+    }
+    function current(){
+        let hr = currentDate.getHours();
+        min = currentDate.getMinutes();
+        secs = currentDate.getSeconds();
+        hr = (hr%12)||hr;
+        hr = (((hr.toString()).length)>1)?hr:`0${hr}`;
+        min = (((min.toString()).length)>1)?min:`0${min}`;
+        secs = (((secs.toString()).length)>1)?secs:`0${secs}`;
+
+        // console.log(hr);
+        // console.log(min);
+        // console.log(secs);
+
+        currenthr.textContent = hr;
+        currentmin.textContent = min;
+        currentsec.textContent = secs;
     }
     }
 // console.log(currentDate.toUTCString());
